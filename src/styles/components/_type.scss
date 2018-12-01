@@ -1,0 +1,26 @@
+h1 {
+  font-size: 4.6rem;
+  line-height: 5.5rem;
+
+  small {
+    display: inline-block;
+    font-size: 2.4rem;
+    color: $color-grey-500;
+    line-height: 3.8rem;
+  }
+}
+
+
+h2, h3 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+.highlight {
+  display: inline-block;
+  background: $color-white;
+  line-height: 1.25em;
+  padding: 0 1rem;
+  margin-left: -1rem;
+  margin-bottom: 0.5rem;
+}

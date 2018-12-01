@@ -1,0 +1,26 @@
+.phone {
+  position: relative;
+  background-image: url('/images/phone.svg');
+
+  $width: 185.602;
+  $height: 369.488;
+  $margin-left: 11 / $width * 100%;
+  $margin-right: 9 / $width * 100%;
+  $margin-top: 9 / $height * 100%;
+  $margin-bottom: 10 / $height * 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: ($height / $width * 100%);
+  }
+
+  img {
+    position: absolute;
+    left: $margin-left;
+    top: $margin-top;
+    width: 100% - $margin-left - $margin-right;
+    height: 100% - $margin-top - $margin-bottom;
+    object-fit: contain;
+  }
+}

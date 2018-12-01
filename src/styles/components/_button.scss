@@ -1,0 +1,15 @@
+button {
+  $height: 6rem;
+  display: inline-block;
+  height: $height;
+  background: $color-pink;
+  border-radius: $height / 2;
+  text-align: center;
+  font-weight: 700;
+  color: $color-white;
+  font-family: $font-family-body;
+  border: none;
+  font-size: 2.4rem;
+  max-width: 40rem;
+  margin: auto;
+}

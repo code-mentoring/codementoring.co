@@ -1,0 +1,24 @@
+footer {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+      height: 6rem;
+    }
+
+    span {
+      text-align: right;
+      font-size: 1rem;
+      flex: 1;
+    }
+
+    hr {
+      flex-basis: 100%;
+      margin-bottom: 0;
+    }
+
+  }
+  // spas
+}

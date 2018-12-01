@@ -1,0 +1,36 @@
+{
+  "name": "code-mentoring-landing",
+  "version": "0.0.0",
+  "description": "codementoring.co",
+  "main": "index.js",
+  "author": "Tristan Matthias <hello@tristanmatthias.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prebuild": "rm -rf public/",
+    "build:sass": "node-sass src/styles -o ./public/styles",
+    "build:pug": "pug src/views -o ./public --pretty",
+    "build:copy": "cp -r src/images/ ./public/images; cp -r src/static/ ./public; cp -r src/favicon/ ./public",
+    "build:js": "rollup -c",
+    "build": "yarn build:sass && yarn build:pug && yarn build:copy & yarn build:js",
+    "watch": "yarn build:sass -w & yarn build:pug -w & yarn build:copy",
+    "start": "http-server public/"
+  },
+  "dependencies": {
+    "@origami/origami": "^0.0.3-alpha.3",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.10.0",
+    "origami-plugin-google-analytics": "^0.0.1",
+    "origami-store-mongodb": "^0.1.3-alpha.0",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {
+    "rollup": "^0.67.3",
+    "rollup-plugin-babel-minify": "^6.2.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-multi-entry": "^2.0.2",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-typescript2": "^0.18.0",
+    "typescript": "^3.2.1"
+  }
+}

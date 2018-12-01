@@ -1,0 +1,8 @@
+.DS_Store
+**/*.log
+node_modules
+coverage
+.env
+.rpt2*
+
+public

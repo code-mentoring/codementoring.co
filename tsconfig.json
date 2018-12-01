@@ -1,0 +1,24 @@
+{
+  "include": ["./src/scripts/*.ts"],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "lib": [
+      "es5",
+      "es6",
+      "es2015.promise",
+      "es2016.array.include",
+      "es2017.object",
+      "dom"
+    ],
+    "rootDir": "./src/scripts",
+    "outDir": "public/scripts/",
+    "declaration": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

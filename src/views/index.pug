@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    title Melbourne React Course - How to Build a Chat Web App with React.js
+
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="HandheldFriendly" content="true")
+    meta(name="robots" content="index, follow")
+    meta(name="author" content="Tristan Matthias")
+
+    meta(name="description" content="Weekend course in Melbourne Feb 2019. Learn how to build from scratch a web chat app in React and Origami CMS")
+    meta(name="keywords" content="melbourne, react, course, short course, weekend course, melbourne react course, web development, code, mentoring, how to build apps, web app")
+
+
+    meta(property="og:type" content="product.item")
+    meta(property="og:title" content="Melbourne React Course - How to Build a Chat Web App with React.js")
+    meta(property="og:url" content="http://codementoring.co/")
+    meta(property="og:image" content="http://codementoring.co/images/og.jpg")
+    meta(property="product:condition" content="new")
+    meta(property="product:availability" content="20 spots")
+    meta(property="product:price:amount" content="$49")
+    meta(property="product:price:currency" content="AUD")
+
+    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+    link(rel="manifest" href="/site.webmanifest")
+    link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5")
+    meta(name="msapplication-TileColor" content="#2d89ef")
+    meta(name="theme-color" content="#ffffff")
+
+    link(rel="stylesheet" href="/styles/base.css")
+    link(rel="stylesheet" href="/styles/pages/index.css")
+
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-130209502-1")
+    script.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-130209502-1');
+
+    script(type="application/ld+json").
+      {
+        "@context": "http://schema.org/",
+        "@type": "Event",
+        "name": "How to build a Chat Web App",
+        "description": "Learn how to build a chat web app from scratch using React and Origami CMS",
+        "startDate": "2019-02-09",
+        "endDate": "2019-02-10",
+        "location": {
+          "@type": "Place",
+          "name": "City",
+          "address": {
+            "streetAddress": "",
+            "addressLocality": "Melbourne",
+            "addressRegion": "Victoria"
+          }
+        }
+      }
+
+  body
+    header
+      .wrapper
+        img(src="/images/logo.svg" alt="Code Mentoring")
+        .price
+          span $49
+          small For 2#[br] full days
+
+    section.title
+      .wrapper
+        .text
+          h1
+            small how to
+            br
+            span Build a Chat Web App
+            br
+            small from scratch using #[span.blue React] #[br] &amp; #[span.blue Origami CMS]
+
+          hr
+
+          h2.pink
+            span.highlight Weekend Course
+            br
+            span.highlight Sat 9th &mdash; 10th Feb 2019
+            br
+            span.highlight Melbourne, Australia
+
+        .phone
+          img(src="/images/chat-app.svg" alt="Chat Web Application built with React and Origami")
+
+        .circle
+        h3.white 2 full days of training in Melbourne
+
+
+    section.details
+      .wrapper
+        h3.green
+          span.highlight What You’ll Learn
+        ul.benefits.checklist
+          li How to structure a React project
+          li Introduction to Babel and Webpack
+          li How to build your own React components
+          li Managing application state with Redux
+          li Introduction to Node.js
+          li Setting up your own API with Origami
+          li How to protect your data with authenticated requests
+          li + Lots more
+
+        h3.pink + PLUS +
+        ul.extras
+          li
+            img(src="/images/icons/benefit-resume.svg" alt="Resume")
+            span Looks great on your resume.
+          li
+            img(src="/images/icons/benefit-github.svg" alt="Github")
+            span You get to take away all the code you write
+          li
+            img(src="/images/icons/benefit-community.svg" alt="Community")
+            span Join a welcoming community of coders!
+
+
+    section.book#book-now
+      .float
+        .wrapper
+          span Only 20 spots left &mdash; #[span.green $49] per person
+          button Get your ticket now!
+
+
+    footer
+      .wrapper
+        img(src="/images/logo.svg" alt="Code Mentoring")
+        span.copy Code Mentoring &copy; 2018
+        hr
+
+    script(async src="/scripts/index.js")
+

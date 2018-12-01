@@ -1,5 +1,5 @@
 import {scroll} from './lib/scroll';
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   scroll();
 });

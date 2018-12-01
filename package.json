@@ -14,7 +14,8 @@
     "build:js": "rollup -c",
     "build": "yarn build:sass && yarn build:pug && yarn build:copy & yarn build:js",
     "watch": "yarn build:sass -w & yarn build:pug -w & yarn build:copy",
-    "start": "http-server public/"
+    "start": "http-server public/",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "http-server": "^0.11.1"

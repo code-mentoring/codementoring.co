@@ -5,13 +5,13 @@ export const modal = () => {
 
   const closeModal = (m: Element) => () => {
     m.classList.remove('open');
-    document.body.classList.remove('modal-open');
+    document.documentElement.classList.remove('modal-open');
   }
   window.openModal = (m: Element | string) => {
     let modal = m;
     if (typeof modal === 'string') modal = document.querySelector(modal)!;
     modal.classList.add('open');
-    document.body.classList.add('modal-open');
+    document.documentElement.classList.add('modal-open');
   }
 
   Array.from(document.querySelectorAll('*[data-modal]')).forEach(ele => {

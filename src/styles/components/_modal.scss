@@ -56,6 +56,8 @@
 
 
 
-body.modal-open {
-  overflow: hidden;
+html.modal-open {
+  &, body {
+    overflow: hidden;
+  }
 }

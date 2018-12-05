@@ -15,6 +15,7 @@
     "build": "yarn build:sass && yarn build:pug && yarn build:copy & yarn build:js",
     "watch": "yarn build:sass -w & yarn build:pug -w & yarn build:copy",
     "start": "node server",
+    "dev": "NODE_ENV=development node server",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {

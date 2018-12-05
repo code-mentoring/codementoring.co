@@ -3,6 +3,7 @@
     "name": "code-mentoring-biz"
   },
   "plugins": {
+    "./plugins/enforceHttps:enforceHttps": true,
     "./plugins/robots": true,
     "./plugins/sitemap": true,
     "./plugins/stripe:stripe": {},

@@ -1,0 +1,17 @@
+{
+  "app": {
+    "name": "code-mentoring-biz"
+  },
+  "plugins": {
+    "./plugins/robots": true,
+    "./plugins/sitemap": true,
+    "./plugins/stripe:stripe": {},
+    "favicon": "./src/images/logo.png"
+  },
+
+  "resources": {
+    "client": {
+      "model": "./resources/client"
+    }
+  }
+}

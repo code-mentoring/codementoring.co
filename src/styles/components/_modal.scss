@@ -1,0 +1,61 @@
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  &,
+  .back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 101;
+  }
+
+  .back {
+    background: $color-grey-500;
+  }
+
+  aside {
+    position: relative;
+    border-radius: 2rem;
+    padding: 4rem 2rem;
+    background: white;;
+    z-index: 102;
+    width: 100%;
+    margin: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+
+    img.close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      opacity: 0.2;
+      width: 4rem;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &.open {
+    display: flex;
+  }
+}
+
+@media (min-width: 600px) {
+  .modal {
+    aside {
+      padding: 4rem;
+    }
+  }
+}
+
+
+
+body.modal-open {
+  overflow: hidden;
+}

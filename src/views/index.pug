@@ -23,14 +23,6 @@ html(lang="en")
     meta(property="product:price:amount" content="$49")
     meta(property="product:price:currency" content="AUD")
 
-    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
-    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
-    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
-    link(rel="manifest" href="/site.webmanifest")
-    link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5")
-    meta(name="msapplication-TileColor" content="#2d89ef")
-    meta(name="theme-color" content="#ffffff")
-
     link(rel="stylesheet" href="/styles/base.css")
     link(rel="stylesheet" href="/styles/pages/index.css")
 
@@ -125,7 +117,9 @@ html(lang="en")
       .float
         .wrapper
           span Only 20 spots left &mdash; #[span.green $49] per person
-          button Get your ticket now!
+          button.large(data-modal=".payment-form") Get your ticket now!
+
+      include ./components/payment-form
 
 
     footer
@@ -134,5 +128,6 @@ html(lang="en")
         span.copy Code Mentoring &copy; 2018
         hr
 
+    script(src="https://js.stripe.com/v3/")
     script(async src="/scripts/index.js")
 

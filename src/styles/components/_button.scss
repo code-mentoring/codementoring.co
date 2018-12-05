@@ -1,5 +1,6 @@
 button {
-  $height: 6rem;
+  $height: 4rem;
+  padding: 0 4rem;
   display: inline-block;
   height: $height;
   background: $color-pink;
@@ -12,4 +13,20 @@ button {
   font-size: 2.4rem;
   max-width: 40rem;
   margin: auto;
+  transition: all $ani-time / 2;
+  outline: none;
+
+  &.large {
+    $height: 6rem;
+    height: $height;
+    border-radius: $height / 2;
+  }
+
+  &:hover {
+    transform: scale(1.05)
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }

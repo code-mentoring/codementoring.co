@@ -13,6 +13,9 @@
     ],
     "rootDir": "./src/scripts",
     "outDir": "public/scripts/",
+    "typeRoots": [
+      "./src/scripts/types/window.d.ts"
+    ],
     "declaration": false,
     "strict": true,
     "esModuleInterop": true,

@@ -1,0 +1,51 @@
+.modal.payment-form
+  .back
+  aside
+    img.close(src="/images/icons/cross.svg" alt="Close modal")
+
+    form#payment-form(action="/charge" method="post")
+      h2 Book your spot
+
+      div#formError.pink
+
+
+      .field-name.plain
+        label(for="name") Full Name
+        input#name(type="text" placeholder="John Smith")
+        div#nameError(role="alert")
+
+      .field-phone.plain
+        label(for="phone") Mobile
+        input#phone(type="text" placeholder="0411 111 111")
+        div#phoneError(role="alert")
+
+      .field-email.plain
+        label(for="email") Email
+        input#email(type="email" placeholder="hello@codementoring.co")
+        div#emailError(role="alert")
+
+      .field-cardNumber
+        label(for="cardNumber") Card Number
+        div#cardNumber.input
+        div#cardNumberError(role="alert")
+
+      .field-cardExpiry
+        label(for="cardExpiry") Expiry
+        div#cardExpiry.input
+        div#cardExpiryError(role="alert")
+
+      .field-cardCvc
+        label(for="cardCvc") CVC
+        div#cardCvc.input
+        div#cardCvcError(role="alert")
+
+
+      div.price $49 per person
+      button Book your spot
+
+
+    .success
+      .lanyard
+        span
+      h2.green Reservation successful!
+      p Thanks so much for signing up to the Code Mentoring Weekend. We'll see you in February!

@@ -1,9 +1,24 @@
 // @ts-ignore
-import {fetch} from 'whatwg-fetch'
+import {fetch} from 'whatwg-fetch';
 
 const STRIPE_KEY = '__STRIPE_KEY__';
 
 export const payment = () => {
+  const PRICE = 49.00;
+
+  document.querySelector('#book-now button')!.addEventListener('click', () => {
+    // @ts-ignore
+    fbq('track', 'InitiateCheckout', {
+      value: PRICE,
+      currency: 'AUD',
+      content_name: 'Checkout',
+      content_category: 'course',
+      content_ids: 'react-chat-app',
+      num_ids: 1
+    });
+  });
+
+
   // @ts-ignore
   const s = Stripe(STRIPE_KEY);
   const elements = s.elements({
@@ -147,6 +162,8 @@ export const payment = () => {
         const paymentModal = document.querySelector('.payment-form')!;
         paymentModal.classList.add('successful');
         paymentModal.querySelector('.lanyard span')!.textContent = values.name;
+        // @ts-ignore
+        fbq('track', 'Purchase', {currency: "AUD", value: PRICE});
       }
     }
 

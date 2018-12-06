@@ -150,7 +150,10 @@ export const payment = () => {
     });
 
 
-    const { token, error } = await s.createToken(fields.stripe.cardNumber);
+    const { token, error } = await s.createToken(
+      fields.stripe.cardNumber,
+      { name: values.name }
+    );
     if (error) {
       if (!err) err = error.message;
     } else values.token = token.id;

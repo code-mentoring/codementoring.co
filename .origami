@@ -5,7 +5,9 @@
   "plugins": {
     "./plugins/enforceHttps:enforceHttps": true,
     "./plugins/robots": true,
-    "./plugins/sitemap": true,
+    "sitemap": {
+      "hostname": "https://codementoring.co"
+    },
     "./plugins/stripe:stripe": {},
     "favicon": "./src/images/logo.png"
   },

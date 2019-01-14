@@ -53,20 +53,34 @@ html(lang="en")
 
     script(type="application/ld+json").
       {
-        "@context": "http://schema.org/",
+        "@context": "http://www.schema.org",
         "@type": "Event",
         "name": "How to build a Chat Web App",
         "description": "Learn how to build a chat web app from scratch using React and Origami CMS",
-        "startDate": "2019-02-09",
-        "endDate": "2019-02-10",
+        "url": "https://www.codementoring.co",
+        "startDate": "09/02/2018 9:00AM",
+        "endDate": "10/02/2018 5:00PM",
         "location": {
           "@type": "Place",
           "name": "City",
           "address": {
+            "@type": "PostalAddress",
             "streetAddress": "",
             "addressLocality": "Melbourne",
-            "addressRegion": "Victoria"
+            "addressRegion": "Victoria",
+            "postalCode": "3000",
+            "addressCountry": "Australia"
           }
+        },
+        "offers": {
+          "@type": "Offer",
+          "description": "Buy a ticket to the 2 day event",
+          "url": "https://www.codementoring.co",
+          "price": "$49.00"
+        },
+        "performer": {
+          "@type": "PerformingGroup",
+          "name": "Tristan Matthias"
         }
       }
 

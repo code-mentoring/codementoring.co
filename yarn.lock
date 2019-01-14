@@ -135,9 +135,9 @@
     "@origami/core-lib" "0.0.3-alpha.3"
     "@origami/tslint-config" "0.0.3-alpha.3"
 
-"@origami/core-lib@0.0.3-alpha.10":
-  version "0.0.3-alpha.10"
-  resolved "https://registry.yarnpkg.com/@origami/core-lib/-/core-lib-0.0.3-alpha.10.tgz#d23f5eb7723f44269702573cf6c9d77966ab7d6a"
+"@origami/core-lib@0.0.3-alpha.11":
+  version "0.0.3-alpha.11"
+  resolved "https://registry.yarnpkg.com/@origami/core-lib/-/core-lib-0.0.3-alpha.11.tgz#04d197a750fbf98a7f231be167c8a354c7970886"
   dependencies:
     "@origami/tslint-config" "0.0.3-alpha.3"
     "@types/express" "^4.16.0"
@@ -170,11 +170,11 @@
     marked "^0.3.6"
     resolve-from "^4.0.0"
 
-"@origami/core-server@0.0.3-alpha.10":
-  version "0.0.3-alpha.10"
-  resolved "https://registry.yarnpkg.com/@origami/core-server/-/core-server-0.0.3-alpha.10.tgz#61627f7feb2aa9b9cb0f2820af07f9f4af225a6e"
+"@origami/core-server@0.0.3-alpha.11":
+  version "0.0.3-alpha.11"
+  resolved "https://registry.yarnpkg.com/@origami/core-server/-/core-server-0.0.3-alpha.11.tgz#7217cd8114ed9bdc1a7ad297a9ca93671f568c42"
   dependencies:
-    "@origami/core-lib" "0.0.3-alpha.10"
+    "@origami/core-lib" "0.0.3-alpha.11"
     "@origami/tslint-config" "0.0.3-alpha.3"
     body-parser "^1.18.3"
     corser "^2.0.1"
@@ -210,13 +210,13 @@
     pluralize "^7.0.0"
     tcp-port-used "^1.0.1"
 
-"@origami/core@0.0.3-alpha.10":
-  version "0.0.3-alpha.10"
-  resolved "https://registry.yarnpkg.com/@origami/core/-/core-0.0.3-alpha.10.tgz#e34eaf6ed01899626111551713df4cef2e80b55c"
+"@origami/core@0.0.3-alpha.11":
+  version "0.0.3-alpha.11"
+  resolved "https://registry.yarnpkg.com/@origami/core/-/core-0.0.3-alpha.11.tgz#ede304c8750a14a76f991849e898a2a8c5ada385"
   dependencies:
-    "@origami/core-lib" "0.0.3-alpha.10"
-    "@origami/core-server" "0.0.3-alpha.10"
-    "@origami/plugin-core-api" "0.0.3-alpha.10"
+    "@origami/core-lib" "0.0.3-alpha.11"
+    "@origami/core-server" "0.0.3-alpha.11"
+    "@origami/plugin-core-api" "0.0.3-alpha.11"
     "@origami/tslint-config" "0.0.3-alpha.3"
 
 "@origami/core@0.0.3-alpha.5":
@@ -246,12 +246,12 @@
     origami-plugin-user-profiles "^1.0.1"
     signal-exit "^3.0.2"
 
-"@origami/plugin-core-api@0.0.3-alpha.10":
-  version "0.0.3-alpha.10"
-  resolved "https://registry.yarnpkg.com/@origami/plugin-core-api/-/plugin-core-api-0.0.3-alpha.10.tgz#42e460abf1404a936c5f61391790ee3ff64b3674"
+"@origami/plugin-core-api@0.0.3-alpha.11":
+  version "0.0.3-alpha.11"
+  resolved "https://registry.yarnpkg.com/@origami/plugin-core-api/-/plugin-core-api-0.0.3-alpha.11.tgz#0e2332d54e7ca3fbd321699df8cab1c7b1cbb46e"
   dependencies:
-    "@origami/core-lib" "0.0.3-alpha.10"
-    "@origami/core-server" "0.0.3-alpha.10"
+    "@origami/core-lib" "0.0.3-alpha.11"
+    "@origami/core-server" "0.0.3-alpha.11"
     "@origami/tslint-config" "0.0.3-alpha.3"
     npm-programmatic "^0.0.10"
     request-promise-native "^1.0.5"
@@ -280,11 +280,12 @@
     "@origami/core" "0.0.3-alpha.5"
     http-errors "^1.7.1"
 
-"@origami/plugin-sitemap@^0.0.3-alpha.10":
-  version "0.0.3-alpha.10"
-  resolved "https://registry.yarnpkg.com/@origami/plugin-sitemap/-/plugin-sitemap-0.0.3-alpha.10.tgz#bbacd5e92d7cf9a96734974c7fd06d07833d3902"
+"@origami/plugin-sitemap@^0.0.3-alpha.12":
+  version "0.0.3-alpha.12"
+  resolved "https://registry.yarnpkg.com/@origami/plugin-sitemap/-/plugin-sitemap-0.0.3-alpha.12.tgz#835c31cb2d9623c96650a9405294b753e00dc224"
   dependencies:
-    "@origami/core" "0.0.3-alpha.10"
+    "@origami/core" "0.0.3-alpha.11"
+    recursive-readdir "^2.2.2"
     sitemap "^2.1.0"
 
 "@origami/tslint-config@0.0.3-alpha.3":
@@ -2404,7 +2405,7 @@ min-document@^2.19.0:
   dependencies:
     dom-walk "^0.1.0"
 
-minimatch@^3.0.2, minimatch@^3.0.4, minimatch@~3.0.2:
+minimatch@3.0.4, minimatch@^3.0.2, minimatch@^3.0.4, minimatch@~3.0.2:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:
@@ -3187,6 +3188,12 @@ readable-stream@^2.0.1, readable-stream@^2.0.6:
     safe-buffer "~5.1.1"
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
+
+recursive-readdir@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/recursive-readdir/-/recursive-readdir-2.2.2.tgz#9946fb3274e1628de6e36b2f6714953b4845094f"
+  dependencies:
+    minimatch "3.0.4"
 
 redent@^1.0.0:
   version "1.0.0"
